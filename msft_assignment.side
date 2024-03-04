@@ -1,0 +1,51 @@
+{
+  "id": "5985cd5f-2e0d-40d2-ac49-ad81e8c867f1",
+  "version": "2.0",
+  "name": "msft_assignment",
+  "url": "https://arxiv.org/",
+  "tests": [{
+    "id": "f69f2f96-6315-491d-b98a-ba88dc37d833",
+    "name": "Untitled",
+    "commands": [{
+      "id": "b13a2d88-2ccd-4f72-a11f-3fd373217250",
+      "comment": "",
+      "command": "open",
+      "target": "https://arxiv.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "189d8331-e322-4c70-837a-16a99f6c936b",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-astro-ph",
+      "targets": [
+        ["id=new-astro-ph", "id"],
+        ["linkText=new", "linkText"],
+        ["css=#new-astro-ph", "css:finder"],
+        ["xpath=(//a[contains(text(),'new')])[2]", "xpath:link"],
+        ["xpath=//a[@id='new-astro-ph']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/ul/li/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/astro-ph/new')]", "xpath:href"],
+        ["xpath=//li/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2280298c-62aa-463a-86ee-5636075e1680",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "40217539-b62f-4268-9ee8-c12ae586b9c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f69f2f96-6315-491d-b98a-ba88dc37d833"]
+  }],
+  "urls": ["https://arxiv.org/list/astro-ph/new", "https://arxiv.org/"],
+  "plugins": []
+}
